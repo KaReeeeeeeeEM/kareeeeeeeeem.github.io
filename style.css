@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+a{
+    color: #000066;
+}
+
+a:hover{
+    text-decoration: underline #000066;
+}
+
+dl{
+    margin-bottom: 0.5rem;
+}
+
+dd{
+    padding-left:0.8rem;
+}
+
+dt a{
+    font-weight: 800;
+    color: #000066;
+    text-decoration: none;
+}
+dd a{
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 2rem 0;
+}
+
+main{
+    width: 100%;
+    height: 75vh;
+}
+
+main .main-block{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main-block .block-1,.main-block .block-3{
+    width: 20%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-block .block-2{
+    width: 58%;
+    border: 1px solid #000066;
+    height: 100%;
+}
+
+.block-2 .inner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-container .top,.inner-container .bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 0.8rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.inner-container .top section,.inner-container .bottom section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.top .partition, .bottom .partition{
+    margin: auto;
+}
+
+section img{
+    width: 200px;
+    height: 165px;
+}
+
+section a{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #000066;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+section p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.heading{
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem 0;  
+    text-align: center; 
+    background: #000066;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: left;
+    font-size: 0.8rem;
+    padding:0.5rem 1rem;
+}
+
+.links{
+    text-decoration: none;
+    margin-bottom: 0.18rem; 
+    font-weight: 800;
+}
+
+.sub-1{
+    height: 60%;
+    width: 100%;
+    border: 1px solid #000066;
+}
+
+.sub-2{
+    height: 35%;
+    width: 100%;
+    border: 1px solid #000066;
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    margin:0.3rem auto;
+}
