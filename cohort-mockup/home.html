@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/assets/bin10labs.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/index.css">
+    <title>Binary Cohort - 2024</title>
+</head> 
+<body> 
+    <!-- this is the nav section -->
+     <nav class="px-4 md:px-12 lg:px-20 fixed top-0 left-0 w-full bg-white z-30">
+        <div class="flex relative justify-between items-center w-full h-16 bg-white shadow-md px-8 md:px-12 z-30">
+            <div class="flex items-center">
+                <img class="h-6 w-24 lg:h-6 lg:w-24" src="src/assets/bin10labs.png" alt="Binary Cohort logo">
+            </div>
+            
+            <!-- for large devices -->
+            <div class="hidden lg:flex items-center">
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-red-700 active">Home</a></li>
+                    <li><a href="#about" class="hover:text-red-700">About</a></li>
+                    <li><a href="#testimonials" class="hover:text-red-700">Testimonials</a></li>
+                    <li><a href="#contact" class="hover:text-red-700">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- for small devices -->
+             <div id="menu" class="h-6 w-6 lg:hidden">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#a10c0c" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#a10c0c" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#a10c0c" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+             </div>
+
+             <div id="dropdown" class="absolute shadow-lg bg-white flex flex-col items-center justify-center -top-96 left-0 w-full rounded">
+                <span class="my-2 py-2 rounded w-full text-center hover:text-white hover:bg-red-700 active"><a href="#home">Home</a></span>
+                <span class="my-2 py-2 rounded w-full text-center hover:text-white hover:bg-red-700"><a href="#about">About</a></span>
+                <span class="my-2 py-2 rounded w-full text-center hover:text-white hover:bg-red-700"><a href="#testimonials">Testimonials</a></span>
+                <span class="my-2 py-2 rounded w-full text-center hover:text-white hover:bg-red-700"><a href="#contact">Contact</a></span>
+             </div>
+        </div>
+     </nav>
+
+     <!-- this is the hero section -->
+      <section id="home" class="flex flex-col lg:flex-row items-center justify-between my-4 lg:my-8 px-4 md:px-12 lg:px-20 mt-20 md:mt-28 lg:mt-32">
+        <div class="my-4 w-full lg:w-1/2">
+            <h1 class="text-5xl lg:text-6xl font-bold text-gray-800">Binary Cohort</h1>
+            <h2 class="text-3xl lg:text-3xl mt-4 text-red-700">2024</h2>
+            <p class="text-lg mt-4 my-4 text-justify lg:text-start lg:my-8">Join us for our annual binary cohort bootcamp, where we will be learning to networking together, build projects, and learn valuable skills.</p>
+            <button href="#" class="bg-red-700 text-white hover:scale-105 px-4 py-2 md:px-8 md:py-3 rounded my-4">Join Now</button>
+        </div>
+        <div class=" w-full lg:w-1/2 lg:my-8">
+            <img src="src/assets/hero.png" alt="team image">
+        </div>
+      </section>
+
+     <!-- this is the showcase section -->
+     <section id="projects" class="bg-[#b91c1ccf] flex flex-col lg:flex-row items-center justify-between my-4 lg:my-8 px-4 md:px-12 lg:px-20">
+        <!-- this is where we tell the people of how many projects we have done and the number of students as well as the duration we have attended -->
+        <div class="w-full flex flex-col md:flex-row items-center justify-center my-4 lg:py-12">
+            <div class="w-1/3 text-center my-4 lg:my-0">
+                <h3 class="text-2xl font-bold md:text-3xl text-white"><span id="project-count">5</span>+</h3>
+                <p class="text-sm md:text-lg text-gray-900">Projects</p>
+            </div>
+            <div class="w-1/3 text-center my-4 lg:my-0">
+                <h3 id="student-count" class="text-2xl font-bold md:text-3xl text-white">10</h3>
+                <p class="text-sm md:text-lg text-gray-900">Students</p>
+            </div>
+            <div class="w-1/3 text-center my-4 md:my-0">
+                <h3 class="text-2xl font-bold md:text-3xl text-white"><span id="week-count">20</span>+</h3>
+                <p class="text-sm md:text-lg text-gray-900">Weeks</p>
+            </div>
+        </div>
+
+     </section>
+
+     <!-- this is the values section -->
+      <section id="about" class="w-full flex flex-col items-center justify-center my-4 lg:my-20 px-4 md:px-12 lg:px-20">
+        <h1 class="text-red-700 font-bold text-3xl lg:text-4xl">Our Core Values</h1>
+        <p class="w-full my-4 md:my-6 text-center ">
+            Here at binary Cohort, we believe in creating a strong, diverse, and inclusive community. We strive to foster a culture of growth, learning, and empowerment through our programs and events.
+        </p>
+        <div class="flex flex-col md:flex-row lg:items-start my-4 lg:my-8 px-4 md:px-12 lg:px-20">
+            
+             <div class="w-full lg:w-1/2 lg:h-auto mx-1 hover:scale-105 xl:h-[27vh] my-4 lg:my-0 flex flex-col items-start justify-start p-4 lg:p-8 shadow-lg rounded-lg border-2 border-red-700 cursor-pointer group">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="w-4 h-4 border-2 border-red-700 rounded-full p-4 text-red-700 font-bold flex items-center justify-center group-hover:bg-red-700 group-hover:text-white mr-2">1</span>   
+                    <h2 class="text-red-700 font-bold">Integrity</h2>
+                </div>
+                <p>
+                    We uphold the highest standards of honesty and ethics.
+                </p>
+             </div>
+
+             
+              <div class="w-full lg:w-1/2 lg:h-auto  mx-1 hover:scale-105  xl:h-[27vh] my-4 lg:my-0  flex flex-col items-start justify-start p-4 lg:p-8 shadow-lg rounded-lg border-2 border-red-700 cursor-pointer group">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="w-4 h-4 border-2 border-red-700 rounded-full p-4 text-red-700 font-bold flex items-center justify-center group-hover:bg-red-700 group-hover:text-white mr-2">2</span>   
+                    <h2 class="text-red-700 font-bold">Teamwork</h2>
+                </div>
+                <p>
+                    Collaboration drives our success and strengthens our community.
+                </p>
+             </div>
+
+             
+              <div class="w-full lg:w-1/2 lg:h-auto  mx-1 hover:scale-105 xl:h-[27vh] my-4 lg:my-0  flex flex-col items-start justify-start p-4 lg:p-8 shadow-lg rounded-lg border-2 border-red-700 cursor-pointer group">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="w-4 h-4 border-2 border-red-700 rounded-full p-4 text-red-700 font-bold flex items-center justify-center group-hover:bg-red-700 group-hover:text-white mr-2">3</span>   
+                    <h2 class="text-red-700 font-bold">Time Management</h2>
+                </div>
+                <p>
+                    We deeply value every moment and use time efficiently to achieve our goals.
+                </p>
+             </div>
+
+             <div class="w-full lg:w-1/2 lg:h-auto  mx-1  hover:scale-105 xl:h-[27vh] my-4 lg:my-0 flex flex-col items-start justify-start p-4 lg:p-8 shadow-lg rounded-lg border-2 border-red-700 cursor-pointer group">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="w-4 h-4 border-2 border-red-700 rounded-full p-4 text-red-700 font-bold flex items-center justify-center group-hover:bg-red-700 group-hover:text-white mr-2">4</span>   
+                    <h2 class="text-red-700 font-bold">Continous Learning</h2>
+                </div>
+                <p>
+                    We are committed to lifelong learning to stay ahead in technology.
+                </p>
+             </div>
+        </div>
+
+      </section>
+
+      <!-- this is the what we aim to achieve section -->
+       <section class="flex flex-col bg-[#b91c1c20] lg:flex-row items-center justify-center lg:justify-between my-4 lg:my-20 px-4 py-8 lg:py-0 md:px-12 lg:px-20">
+            <div class="w-4/5 lg:w-1/2">
+                <img src="src/assets/professional.png" alt="professional guy">
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-end justify-start overflow-x-hidden">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center lg:text-end text-red-700 font-bold my-6 md:my-6 lg:my-8">&lsquo; Building Tomorrow's Tech Leaders Today &rsquo;</h2>
+                <p class="w-full xl:w-4/5 text-justify lg:text-end">
+                    At Binary Labs, we're not just training developers -
+                     we're shaping the future of tech. Our capacity-building 
+                     programs are designed to turn passion into profession, 
+                     equipping aspiring professionals with the skills, knowledge, 
+                     and confidence they need to excel in the industry. We believe in 
+                     nurturing talent and empowering individuals to become leaders in the 
+                     tech world, one project at a time.
+                </p>
+            </div>
+       </section>
+
+       <!-- this is the testimonials section -->
+        <section id="testimonials" class="flex flex-col items-center justify-center my-24 lg:my-20">
+            <h2 class="text-center text-red-700 text-2xl md:text-3xl lg:text-4xl my-2 md:my-4 lg:my-8 font-bold">What our Cohort Say</h2>
+            <p class="text-center mb-4 lg:mb-8">
+                Get to hear what our 2024 cohort says about the Binary Labs Networking Bootcamp Programme.
+            </p>
+
+            <!-- this is where the swiper slides go -->
+            <swiper-container class="mySwiper" pagination-clickable="true"  space-between="30"
+             centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/boy.png" alt="boy" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Manase</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        Binary Labs opened doors for me that I never 
+                        thought possible. The skills I gained here have been 
+                        instrumental in advancing my career. 
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/girl.png" alt="girl" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Thecla</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        Binary Labs provided me with the skills and 
+                        confidence I needed to excel in my career. 
+                        The hands-on approach and supportive community 
+                        made all the difference.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/girl.png" alt="girl" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Immaculatha</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        Joining Binary Labs was one of the best 
+                        decisions I've made. The networking opportunities 
+                        and real-world projects were invaluable.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/boy.png" alt="boy" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Noel</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        I came to Binary Labs to enhance my skills, 
+                        and I left with so much more. 
+                        The connections I made have been invaluable.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/boy.png" alt="boy" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Johnson</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        The practical experience at Binary Labs 
+                        was exactly what I needed. 
+                        It prepared me for the challenges of the industry.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/muslim.png" alt="muslim" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Aisha</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        The mentorship at Binary Labs is top-notch. 
+                        I felt guided every step of the way, and it
+                         truly helped me grow both personally and professionally.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/boy.png" alt="boy" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Pius</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        The supportive community at Binary Labs made
+                         learning enjoyable. The emphasis on teamwork 
+                         helped me develop critical collaboration skills.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/girl.png" alt="girl" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Siloma</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        What I loved most about Binary Labs was 
+                        the collaborative environment. It was inspiring 
+                        to work alongside passionate individuals.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/boy.png" alt="boy" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Hassan</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        Binary Labs was a game-changer for me. 
+                        The comprehensive training and real-world 
+                        projects were crucial to my professional growth.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="w-12 h-12 md:w-16 md:h-16">
+                    <img src="src/assets/girl.png" alt="girl" class="">
+                </div>
+                <div class="my-8 p-4 w-full md:w-1/2 lg:w-1/4">
+                    <h3 class="text-red-700 text-xl my-4 font-bold">Janet</h3>
+                    <p class="text-gray-600 italic">
+                        &OpenCurlyDoubleQuote; 
+                        The experience at Binary Labs was transformative.
+                         It equipped me with the tools and knowledge to take 
+                         my career to the next level.
+                        &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </swiper-slide>
+          </swiper-container> 
+        </section>
+
+        <!-- this is the newsletter subscription section -->
+         <section class="bg-[#b91c1ccf] flex flex-col lg:flex-row items-center lg:justify-between my-4 lg:my-20 px-4 py-8 md:px-12 lg:px-20">
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-white text-2xl font-bold">Subscribe to our Newsletter</h2>
+                <p class="text-white">Want to be part of us? Stay updated with the announcement of the cohorts.</p>
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-col lg:flex-row lg:items-end lg:justify-end my-4 lg:my-0">
+                <form id="form">
+                    <input type="email" name="email" placeholder="Enter your email address" class="py-2 px-4 rounded focus:outline-none text-red-700 w-full md:w-[80%] lg:w-auto" required>
+                    <button id="button" type="submit" class="bg-white text-red-700 font-bold px-4 py-2 rounded-lg my-2 md:my-0">Subscribe</button>
+                </form>
+            </div>
+         </section>
+
+         <!-- this is the footer section -->
+          <section id="contact" class="bg-[#b91c1c30] flex flex-col lg:flex-row items-center mt-4 lg:mt-20 px-4 py-8 md:px-12 lg:px-20 lg:justify-between">
+            <div class="w-full lg:w-1/2">
+                <img src="src/assets/bin10labs.png" alt="binary-labs logo">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-red-700 text-2xl font-bold">Our Mission</h2>
+                <p class="text-gray-900">Binary Labs is a comprehensive training program designed to equip students with the skills and knowledge needed to succeed in their careers.</p>
+                <ul class="list-none text-white mt-8">
+                    <li><a href="#" class="text-red-700">Privacy Policy</a></li>
+                    <li><a href="#" class="text-red-700">Terms of Service</a></li>
+                </ul>
+                <p class="text-gray-900 mt-12">&copy; <span id="year" class="text-red-700"></span> Binary Labs. All rights reserved.</p>
+            </div>
+          </section>
+          
+
+    <!-- this are the scripts for subscription -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+     <script type="text/javascript">
+        emailjs.init('BWL3FGYa9JCepBZBh')
+      </script>
+
+     <script>
+        const btn = document.getElementById('button');
+        const form = document.getElementById('form');
+        const email = document.getElementsByName('email')[0];
+        
+        form.addEventListener('submit', function(event) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(email.value)) {
+                alert('Invalid email address');
+                event.preventDefault();
+            }else{
+                event.preventDefault();
+                const serviceID = 'service_jv99gfd';
+                const templateID = 'template_c3ydz5z';
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then((result) => {
+                    console.log('Email sent:', result.text);
+                    alert('submitted')
+                    }, (error) => {
+                    alert(error.text);
+                    console.log('Email sending error:', error.text);
+                    });
+                email.value = "";
+            }
+        });
+     </script>
+      
+      <!-- script for the swiper slides carousels -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+      <!-- script for the navigation bar in small screens -->
+      <script>
+        const dropdown = document.getElementById('dropdown');
+        const menu = document.getElementById('menu');
+
+        menu.addEventListener('click', () => {
+            if(dropdown.classList.contains("-top-96")) {
+                dropdown.classList.remove("-top-96");
+                dropdown.classList.add("top-16");
+            }else{
+                dropdown.classList.remove("top-16");
+                dropdown.classList.add("-top-96");
+            }
+        });
+      </script>
+
+      <!-- script for number countdown in the showcase section -->
+      <script>
+    function countdownNumber(elementId, startValue, endValue, duration) {
+    const element = document.getElementById(elementId);
+    let currentValue = startValue;
+    const stepTime = Math.abs(Math.floor(duration / (endValue - startValue)));
+
+    const timer = setInterval(() => {
+        currentValue++;
+        element.innerText = currentValue;
+        if (currentValue >= endValue) {
+        clearInterval(timer);
+        }
+    }, stepTime);
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+    countdownNumber('project-count', 1, 5, 2000);
+    countdownNumber('student-count', 1, 10, 2500);
+    countdownNumber('week-count', 1, 20, 3000);
+    });
+      </script>     
+
+      <!-- this is the script to get the current year -->
+       <script>
+        const yearElement = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearElement.innerText = currentYear;
+       </script>
+</body>
+</html>
